@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+ <div id ="header">
+    <div class="container">
+        <nav>
+            <img src="image1/logo.JPG" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#content">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+               <p>STUDENT / SOFTWARE ENGINEER</p>
+               <h1>hello,I am <span> Karan yadav</span> </h1>
+         </div>
+    </div>
+</div>
+<!--------------------about----------->
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                 <img src="image1/mall.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About ME</h1>
+                <p>Aspiring computer programmer with a BTech degree and proven problem-solving and troubleshooting skills.Seeking an entry-level programmer or coder position to continue expanding my knowledge of different languages and systems</p>
+                 
+                <div class="tab-titles">
+                <p class = "tab-links active-link"  onclick="opentab('Technicalskills')">Technicalskills</p>
+                <p class = "tab-links" onclick="opentab('Internship')">Internship</p>
+                <p class = "tab-links" onclick="opentab('education')">education</p> 
+                </div>
+                <div class="tab-contents active-tab" id="Technicalskills">
+                    <ul>
+                        <li><span>languages-</span><br>c/c++,java<li>
+                        <li><span>web development</span><br> front-end development</li>
+                       
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Internship">
+                    <ul>
+                        <li><span>summer intership</span><br>xyz<li>
+                        <li><span>summer internship</span><br>abc</li>
+                       
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>High school</span><br>Maharishi vidya mandir(cbse)-83.4%<li>
+                        <li><span>intermediate</span><br>Maharishi vidya mandir(cbse)-89.6%<li>
+                       
+                    </ul>
+                </div>
+                
+            </div> 
+        </div>
+
+    
+
+</div>
+
+<!--servics-------------->
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <h2>WEb design</h2>
+                <p>based on HTMl,css,javascript</p> 
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>ADD something</h2>
+                <p>not present at moment</p> 
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>ADD something</h2>
+                <p>not present at moment </p> 
+                <a href="#">learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!---------portfolio--------->
+
+
+<div id="portfolio">
+    <div clas="container" >
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-3.png" >
+                <div class="layer">
+                    <h3> <p>No work at present </p></h3>
+                    <a href="#"></a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="images/work-2.png" >
+                <div class="layer">
+                    <h3><p>no work at present</p></h3> 
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3> <p>no work at present</p></h3>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---contact ----->
+
+
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me </h1>
+                <p class="eid">yminky0000@gmail.com</p>
+                <p>887644549</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/karanydvv/" target="_blank">instagram</a>
+                    <a href="https://www.codechef.com/users/karanydvv"target="_blank">codechef</a>
+                    <a href="https://leetcode.com/profile/" target="_blank">leetcode</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link"); 
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab"); 
+        }
+       /*
+        event.currentTarget.classlist.add("acive-link");
+        document.getElementById(tabname).classList.add("active-tab");  
+*/
+    }
+</script>
+
+
+</body>
+</html>
